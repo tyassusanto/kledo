@@ -11,14 +11,24 @@ const Header = () => {
         navigate('/login')
     }
     return (
-        <div className='bg-blue-500 py-3'>
-            <div className="px-2 text-white flex justify-between">
-                <h1 className='text-2xl'>KLEDO TEST</h1>
-                <div className="text-lg">
-                    <button onClick={toProfile} className='p-2 hover:bg-blue-700 active:bg-blue-800 focus:bg-blue-700 transition duration-500 rounded-md'>Profile</button>
-                    <button onClick={toLogin} className=' p-2 hover:bg-blue-700 active:bg-blue-800 focus:bg-blue-700 transition duration-500 rounded-md'>Log In</button>
+        <div className="">
+            <nav class="fixed top-0 z-50 w-full bg-blue-500 text-white">
+                <div class="px-3 py-3 lg:px-5 lg:pl-3">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center justify-start rtl:justify-end">
+                            <span class="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">KLEDO TEST</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex items-center ms-3">
+                                <div>
+                                    <button onClick={toProfile} className='p-2 hover:bg-blue-700 active:bg-blue-800 focus:bg-blue-700 transition duration-500 rounded-md'>Profile</button>
+                                    <button onClick={toLogin} className=' p-2 hover:bg-blue-700 active:bg-blue-800 focus:bg-blue-700 transition duration-500 rounded-md'>Log In</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </nav>
         </div>
     )
 }
