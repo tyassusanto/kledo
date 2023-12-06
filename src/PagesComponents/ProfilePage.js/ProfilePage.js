@@ -1,8 +1,9 @@
 import React from 'react'
+import Header from '../../Components/Header/Header'
 
 const ProfilePage = () => {
     return (
-        <div className="flex-col min-h-screen items-center justify-center p-12">
+        <div className="items-center justify-center p-20">
             <div>
                 <h1 className="text-xl font-bold text-center">Profile</h1>
             </div>
